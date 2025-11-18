@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sendang Prigen - Desa Sidomukti</title>
+  <style>
+    :root {
+      --primary: #4da6ff;
+      --secondary: #2e86de;
+      --bg-light: #f9f9ff;
+      --text-dark: #333;
+      --text-muted: #555;
+      --white: #fff;
+      --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .detail-header {
+      position: relative;
+      background: url("images/sendang-prigen.jpg") center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      text-align: center;
+    }
+
+    .detail-header .overlay {
+      background: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      height: 100%;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .detail-header h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .detail-header p {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    .detail-page {
+      background: var(--bg-light);
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .detail-page .content {
+      background: var(--white);
+      max-width: 850px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      padding: 30px;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    .detail-page .detail-img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      transition: transform 0.4s ease;
+    }
+
+    .detail-page .detail-img:hover {
+      transform: scale(1.03);
+    }
+
+    .detail-page h2 {
+      color: var(--secondary);
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    .detail-page h3 {
+      color: var(--primary);
+      margin-top: 25px;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .detail-page p {
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 25px;
+      background-color: var(--primary);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .back-btn:hover {
+      background-color: var(--secondary);
+      transform: translateY(-3px);
+    }
+
+    footer {
+      background: linear-gradient(135deg, #4ea8de, #1e88e5);
+      color: white;
+      font-size: 0.95em;
+      border-top: 3px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 30px 20px 10px;
+      gap: 30px;
+    }
+
+    .footer-map {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .footer-map h3 {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      color: #e3f2fd;
+    }
+
+    .footer-map iframe {
+      width: 100%;
+      max-width: 350px;
+      height: 200px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    }
+
+    .footer-map .coords {
+      margin-top: 8px;
+      font-size: 0.9em;
+      opacity: 0.9;
+    }
+
+    .footer-info {
+      flex: 1 1 300px;
+    }
+
+    .footer-info h3 {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      color: #e3f2fd;
+    }
+
+    .footer-info p {
+      margin: 6px 0;
+      line-height: 1.5;
+    }
+
+    .footer-info a {
+      color: #bbdefb;
+      text-decoration: none;
+    }
+
+    .footer-info a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding: 5px 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    .footer-bottom span {
+      font-weight: 600;
+      color: #e3f2fd;
+    }
+
+    .footer-bottom strong {
+      color: #bbdefb;
+    }
+
+    @media (max-width: 768px) {
+      .footer-top {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-map iframe {
+        max-width: 100%;
+      }
+
+      .footer-info {
+        text-align: center;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .detail-header { height: 40vh; }
+      .detail-header h1 { font-size: 2rem; }
+      .detail-header p { font-size: 1rem; }
+      .detail-page .content { padding: 20px; }
+      .back-btn { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="detail-header">
+    <div class="overlay">
+      <h1>Sendang Prigen</h1>
+      <p>Situs Patirtaan Bersejarah di Desa Sidomukti</p>
+    </div>
+  </header>
+
+  <main class="detail-page">
+    <div class="content">
+      <img src="images/sendang-prigen.jpg" alt="Sendang Prigen" class="detail-img">
+
+      <h2>Sendang Prigen</h2>
+      <p>
+        Sendang Prigen di Desa Sidomukti, Kecamatan Bandungan, Kabupaten Semarang, merupakan salah satu situs patirtaan kuno yang keberadaannya menyatu dengan lanskap pertanian masyarakat setempat. Lokasinya berada di tengah hamparan persawahan yang masih aktif digarap, sehingga suasananya terasa sangat alami dan menggambarkan hubungan erat antara situs bersejarah dengan aktivitas agraris yang berlangsung sejak zaman dahulu hingga sekarang.
+      </p>
+      <p>
+        Sumber mata air yang memancar di area sendang menjadi inti keberadaan situs ini. Airnya bersih, jernih, dan mengalir tanpa henti sepanjang tahun berkat letaknya yang berada pada lereng Gunung Ungaran. Selain menjadi sumber irigasi utama bagi sawah-sawah di sekitarnya, mata air ini diyakini memiliki nilai spiritual karena sejak masa lampau telah dimanfaatkan masyarakat sebagai tempat penyucian maupun ritual tertentu.
+      </p>
+      <p>
+        Sisa-sisa bangunan kuno, bongkahan batu berukir, serta fragmen arsitektur yang tersebar di sekitar area sendang menunjukkan bahwa tempat ini dahulu merupakan pusat aktivitas manusia di masa klasik, terutama pada periode berkembangnya budaya Hindu-Buddha di kawasan Ungaran.
+      </p>
+
+      <h3>Arca Siwa “Tri Sirah”</h3>
+      <p>
+        Salah satu peninggalan paling ikonik di Sendang Prigen adalah fragmen arca Siwa yang dikenal dengan sebutan “Tri Sirah” atau tiga kepala. Arca ini menampilkan tiga aspek dari Dewa Siwa yang melambangkan sifat-sifat berbeda: kepala kanan merepresentasikan aspek Aghora yang menggambarkan kekuatan dan penghancuran; kepala tengah mempresentasikan aspek Saumya yang identik dengan kedamaian; sedangkan kepala kiri menggambarkan sosok Durga, yang dalam tradisi Hindu dikenal sebagai pasangan Siwa dan simbol perlindungan sekaligus ketegasan.
+      </p>
+      <p>
+        Meskipun kondisi arca ini kini telah rusak—bagian wajah yang tidak lagi utuh, permukaan batu yang aus, serta beberapa pecahan yang tidak lagi ditemukan—keberadaannya tetap penting karena menjadi bukti material bahwa kawasan Sidomukti pernah dihuni oleh komunitas dengan sistem kepercayaan Hindu kuno.
+      </p>
+
+      <h3>Legenda dan Kepercayaan Lokal</h3>
+      <p>
+        Selain menyimpan peninggalan arkeologis, Sendang Prigen juga lekat dengan tradisi lisan dan cerita rakyat yang masih dipercaya sebagian warga hingga hari ini. Salah satu cerita yang paling dikenal adalah kisah mengenai rencana pembangunan sebuah masjid di dekat sendang yang konon tidak dapat dilanjutkan karena ayam jago berkokok lebih awal dari waktu yang diperkirakan. Peristiwa tersebut diyakini sebagai isyarat bahwa kawasan tersebut memiliki kesakralan tersendiri dan tidak selayaknya dialihfungsi menjadi area pembangunan masjid.
+      </p>
+      <p>
+        Hingga kini, warga Desa Sidomukti masih merawat sendang secara bergotong-royong, baik dengan membersihkan area sekitar mata air, memperbaiki aliran air, maupun menjaga kelestarian situs tanpa mengganggu struktur batuan kuno yang tersisa. Upaya sederhana ini dilakukan sebagai bentuk penghormatan pada leluhur serta pemeliharaan terhadap karunia alam berupa mata air yang menjadi sumber kehidupan warga sejak generasi ke generasi.
+      </p>
+
+      <h3>Makna dan Identitas Budaya</h3>
+      <p>
+        Dengan perpaduan unsur sejarah, arkeologi, legenda lokal, serta fungsi ekologis yang masih bertahan hingga kini, Sendang Prigen tidak hanya menjadi situs purbakala, tetapi juga simbol keterikatan masyarakat Sidomukti dengan alam dan warisan leluhur. Tempat ini merepresentasikan jejak masa lampau yang masih hidup di tengah kehidupan modern dan menjadi bagian penting dari identitas budaya masyarakat setempat.
+      </p>
+
+      <a href="index.html#pariwisata" class="back-btn">← Kembali</a>
+    </div>
+  </main>
+
+<footer>
+    <div class="footer-top">
+      <div class="footer-map">
+        <h3>Lokasi Desa</h3>
+        <iframe src="https://www.google.com/maps?q=(-7.206484,110.380312)&hl=id&z=14&output=embed" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="footer-info">
+        <h3>Kontak & Alamat</h3>
+        <p><strong>Alamat:</strong> Jl. Goa Jepang Km. 1, 50665, Desa Sidomukti, Kecamatan Bandungan, Kabupaten Semarang, Jawa Tengah</p>
+        <p><strong>Email:</strong> <a href="mailto:desa.sidomuktibandungan@gmail.com">desa.sidomuktibandungan@gmail.com</a></p>
+        <p><strong>Telepon:</strong>0298-7136292</p>
+        <p><strong>Jam Operasional:</strong> Senin - Jumat, 08.30 - 14.00 WIB</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>Desa Sidomukti</span> | Dibuat oleh Anindya Salsabila | UNNES GIAT 13</p>
+    </div>
+</footer>
+</body>
+</html>
+

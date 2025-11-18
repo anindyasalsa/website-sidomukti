@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Desa Sidomukti</title>
+  <link rel="icon" type="image/png" href="images/logo-desa.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo-desa.png" alt="Logo Desa Sidomukti">
+      <div class="logo-text">
+        <h1>Desa Sidomukti</h1>
+        <p>Kabupaten Bandungan</p>
+      </div>
+    </div>
+    
+    <nav class="navbar">
+      <ul>
+        <li><a href="#" class="active" onclick="showSection('home')">Beranda</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn">
+            Potensi Desa <span class="arrow">▼</span>
+          </a>
+          <ul class="dropdown-content">
+            <li><a href="#" onclick="showSection('mapping-potensi')">Mapping Potensi</a></li>
+            <li><a href="#" onclick="showSection('umkm')">UMKM</a></li>
+            <li><a href="#" onclick="showSection('pariwisata')">Pariwisata</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="#" class="dropbtn">
+            Profil <span class="arrow">▼</span>
+          </a>
+          <ul class="dropdown-content">
+            <li><a href="#" onclick="showSection('visimisi')">Visi Misi</a></li>
+            <li><a href="#" onclick="showSection('struktur-pemerintahan')">Struktur Pemerintahan</a></li>
+            <li><a href="#" onclick="showSection('lembaga-desa')">Lembaga Desa</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="#" class="dropbtn">
+            Layanan <span class="arrow">▼</span>
+          </a>
+          <ul class="dropdown-content">
+            <li><a href="#" onclick="showSection('administrasi-kependudukan')">Administrasi Kependudukan</a></li>
+            <li><a href="#" onclick="showSection('administrasi-a')">Administrasi A</a></li>
+            <li><a href="#" onclick="showSection('administrasi-b')">Administrasi B</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn">
+            PPID <span class="arrow">▼</span>
+          </a>
+          <ul class="dropdown-content">
+            <li><a href="#" onclick="showSection('ppid-a')">PPID A</a></li>
+            <li><a href="#" onclick="showSection('ppid-b')">PPID B</a></li>
+            <li><a href="#" onclick="showSection('ppid-c')">PPID C</a></li>
+            <li><a href="#" onclick="showSection('ppid-d')">PPID D</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn">
+            Informasi <span class="arrow">▼</span>
+          </a>
+          <ul class="dropdown-content">
+            <li><a href="#" onclick="showSection('informasi-a')">Informasi A</a></li>
+            <li><a href="#" onclick="showSection('informasi-b')">Informasi B</a></li>
+            <li><a href="#" onclick="showSection('informasi-c')">Informasi C</a></li>
+            <li><a href="#" onclick="showSection('informasi-d')">Informasi D</a></li>
+          </ul>
+        </li>
+        <li><a href="#" onclick="showSection('aboutus')">Tentang Kami</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Selamat Datang</h2>
+      <h1>Website Desa Sidomukti</h1>
+      <p>Sumber informasi tentang Desa Sidomukti</p>
+    </div>
+  </section>
+
+  <section id="home" class="content-section active">
+    <h2>Profil Desa Sidomukti</h2>
+    <p>Desa Sidomukti merupakan salah satu desa yang berada di Kecamatan Bandungan, Kabupaten Semarang, Provinsi Jawa Tengah, dan dikenal sebagai wilayah dengan karakteristik alam pegunungan yang subur serta udara yang sejuk. Secara administratif, Desa Sidomukti terdiri dari enam dusun, yaitu Sidomukti, Tegalsari, Krandegan, Gerpetung, Kluwihan, dan Gelog. Setiap dusun memiliki kondisi geografis dan potensi lokal yang khas, namun secara umum masyarakatnya hidup dalam lingkungan pedesaan yang masih asri dan lekat dengan budaya agraris. Sebagian besar penduduk Desa Sidomukti bermata pencaharian sebagai petani, dengan komoditas unggulan berupa daun bawang yang ditanam di lahan-lahan terasering pegunungan serta bunga mawar yang dibudidayakan untuk memenuhi kebutuhan pasar lokal maupun luar daerah. Aktivitas pertanian menjadi salah satu penggerak ekonomi utama desa dan turut membentuk pola kehidupan sosial masyarakat yang saling bergotong royong dalam menjaga produktivitas lahan.</p>
+
+    <p>Selain dikenal sebagai desa agraris, Sidomukti juga memiliki daya tarik tersendiri sebagai kawasan wisata yang bernuansa alami dan sejuk. Letaknya yang strategis, tidak terlalu jauh dari pusat Kota Semarang maupun kawasan wisata Bandungan, menjadikan desa ini destinasi populer bagi wisatawan yang ingin menikmati suasana pegunungan tanpa harus menempuh perjalanan jauh. Beragam objek wisata tersedia di wilayah ini, mulai dari homestay yang dikelola oleh masyarakat lokal, wisata alam berbasis pemandangan pegunungan, petting zoo ramah keluarga, hingga jalur pendakian menuju puncak Gunung Ungaran yang banyak diminati pendaki. Keberadaan destinasi wisata ini turut memperluas peluang ekonomi masyarakat melalui sektor jasa, akomodasi, kuliner, dan usaha mikro yang berkembang di sekitar kawasan wisata.</p>
+
+    <p>Dalam aspek sosial dan keagamaan, mayoritas penduduk Desa Sidomukti memeluk agama Islam dan memiliki tradisi keagamaan yang dijalankan secara rutin sebagai bentuk rasa syukur serta sarana mempererat kebersamaan antarwarga. Pembacaan Surah Yasin diselenggarakan setiap hari Kamis malam atau malam Jumat secara bergilir di rumah warga, sementara pengajian rutin dilaksanakan setiap malam Jumat Kliwon sebagai momentum untuk menambah wawasan keagamaan sekaligus memperkuat nilai-nilai sosial dalam masyarakat. Selain kegiatan keagamaan, warga Desa Sidomukti juga aktif dalam kelompok tani di masing-masing dusun yang berfungsi sebagai wadah untuk berdiskusi, bertukar informasi mengenai teknik budidaya terkini, serta merencanakan upaya peningkatan hasil pertanian. Kelompok tani ini berperan penting dalam menjaga keberlanjutan sektor pertanian yang menjadi tulang punggung ekonomi desa sekaligus memperkuat solidaritas antarpetani.</p>
+
+    <p>Dengan perpaduan potensi alam, sektor pertanian yang kuat, tradisi sosial yang harmonis, serta geliat wisata yang semakin berkembang, Desa Sidomukti menjadi contoh desa pegunungan yang mampu memadukan kearifan lokal dengan peluang ekonomi modern, sehingga memberikan kontribusi signifikan bagi kesejahteraan masyarakatnya.</p>
+
+    <section class="statistik-wilayah">
+      <h2>Statistik Kependudukan Desa</h2>
+      <div class="chart-row">
+        <div class="chart-container">
+          <canvas id="barChart"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="pieChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="dokumentasi">
+      <h2>Dokumentasi Kegiatan Desa</h2>
+      <div class="slider">
+        <div class="slide-track">
+
+          <div class="slide">
+            <img src="images/KegiatanDesa/Rapat-Pemdes.jpg" alt="Rapat Pemdes">
+            <div class="caption">Rapat Pemerintah Desa</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/Evaluasi-PKK.jpg" alt="Evaluasi PKK">
+            <div class="caption">Evaluasi PKK</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/Apel-Bersama.jpg" alt="Apel">
+            <div class="caption">Apel Bersama</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/Drumband.JPG" alt="Drumband">
+            <div class="caption">Drum Band Agustusan</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/Lomba-FashionShow-PKK.JPG" alt="fashionshow">
+            <div class="caption">Lomba Fashion Show PKK</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/Lomba-Hari-Kartini.JPG" alt="Hari Kartini">
+            <div class="caption">Lomba Hari Kartini</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/Lomba-PKK.JPG" alt="Lomba-PKK">
+            <div class="caption">Lomba PKK</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/Penyerahan-PTSL.jpg" alt="Penyerahan-PTSL">
+            <div class="caption">Penyerahan Sertifikat PSTL Oleh Bupati</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/Sedekah-Dusun.jpg" alt="Sedekah-Dusun">
+            <div class="caption">Sedekah Dusun</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/karang-taruna.jpg" alt="Karang Taruna">
+            <div class="caption">Karang Taruna</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/posyandu tegalsari.jpg" alt="Posyandu Tegalsari">
+            <div class="caption">Posyandu Tegalsari</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/fattayat.jpg" alt="Fattayat">
+            <div class="caption">Fattayat</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/muslimatan.jpg" alt="Muslimatan">
+            <div class="caption">Muslimatan</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/posyandu kluwihan.jpg" alt="Posyandu Kluwihan">
+            <div class="caption">Posyandu Kluwihan</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/posyandu-geblog.jpg" alt="Posyandu Geblog">
+            <div class="caption">Posyandu Geblog</div>
+          </div> 
+          <div class="slide">
+            <img src="images/KegiatanDesa/Posyandu-sidomukti.jpg" alt="Posyandu Sidomukti">
+            <div class="caption">Posyandu Sidomukti</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/Khitanan.jpg" alt="Khitanan">
+            <div class="caption">Khitanan</div>
+          </div>
+
+          <!-- duplikasi untuk efek looping -->
+          <div class="slide">
+            <img src="images/KegiatanDesa/Rapat-Pemdes.jpg" alt="Rapat Pemdes">
+            <div class="caption">Rapat Pemerintah Desa</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/Evaluasi-PKK.jpg" alt="Evaluasi PKK">
+            <div class="caption">Evaluasi PKK</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/Apel-Bersama.jpg" alt="Apel">
+            <div class="caption">Apel Bersama</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/Drumband.JPG" alt="Drumband">
+            <div class="caption">Drum Band Agustusan</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/Lomba-FashionShow-PKK.JPG" alt="fashionshow">
+            <div class="caption">Lomba Fashion Show PKK</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/Lomba-Hari-Kartini.JPG" alt="Hari Kartini">
+            <div class="caption">Lomba Hari Kartini</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/Lomba-PKK.JPG" alt="Lomba-PKK">
+            <div class="caption">Lomba PKK</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/Penyerahan-PTSL.jpg" alt="Penyerahan-PTSL">
+            <div class="caption">Penyerahan Sertifikat PSTL Oleh Bupati</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/Sedekah-Dusun.jpg" alt="Sedekah-Dusun">
+            <div class="caption">Sedekah Dusun</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/karang-taruna.jpg" alt="Karang Taruna">
+            <div class="caption">Karang Taruna</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/posyandu tegalsari.jpg" alt="Posyandu Tegalsari">
+            <div class="caption">Posyandu Tegalsari</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/fattayat.jpg" alt="Fattayat">
+            <div class="caption">Fattayat</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/muslimatan.jpg" alt="Muslimatan">
+            <div class="caption">Muslimatan</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/posyandu kluwihan.jpg" alt="Posyandu Kluwihan">
+            <div class="caption">Posyandu Kluwihan</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/posyandu-geblog.jpg" alt="Posyandu Geblog">
+            <div class="caption">Posyandu Geblog</div>
+          </div> 
+          <div class="slide">
+            <img src="images/KegiatanDesa/Posyandu-sidomukti.jpg" alt="Posyandu Sidomukti">
+            <div class="caption">Posyandu Sidomukti</div>
+          </div>
+          <div class="slide">
+            <img src="images/KegiatanDesa/Khitanan.jpg" alt="Khitanan">
+            <div class="caption">Khitanan</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section id="mapping-potensi" class="mapping-potensi">
+      <h2>Mapping Potensi Desa Sidomukti</h2>
+      <p>Berikut merupakan peta potensi Desa Sidomukti yang menampilkan lokasi-lokasi strategis seperti Usaha Mikro, Kecil, dan Menengah, area pertanian, dan objek wisata.</p>
+      <div class="map-container">
+        <figure>
+          <img src="images/Mapping-Desa.jpg" alt="Peta Potensi Desa Sidomukti">
+          <figcaption>Dibuat Oleh: <strong>KKN UNNES GIAT 13 - 2025</strong></figcaption>
+        </figure>
+      </div>
+
+    </section>
+
+  <section id="visimisi" class="content-section">
+    <h2>Visi, Misi, dan Tujuan Desa Sidomukti</h2>
+    
+    <div class="visi-card">
+      <h3>Visi</h3>
+      <p><strong>Hadir lebih dekat melayani masyarakat dengan tata kelola pemerintahan yang baik untuk menuju Desa Sidomukti yang mandiri, tertib, dan sejahtera.</strong></p>
+    </div>
+    
+    <div class="misi-card">
+      <h3>Misi</h3>
+      <ul>
+        <li>Menyelenggarakan pemerintahan yang transparan, adil, dan amanah sehingga tercipta keadilan bagi seluruh masyarakat Desa Sidomukti.</li>
+        <li>Menjadi jembatan masyarakat dalam rangka memikul amanah rakyat dengan sebaik-baiknya, dan juga menjadi penyalur aspirasi masyarakat, serta mengabdi.</li>
+        <li>Mendukung kegiatan masyarakat yang baik, berupa kegiatan keagamaan, kegiatan sosial, dan lain sebagainya, guna terciptanya komunikasi yang akrab dan merakyat.</li>
+        <li>Terlibat dan melibatkan diri dalam kegiatan kemasyarakatan dan kepemudaan supaya berjalan dengan baik dan maksimal, serta membanggakan.</li>
+        <li>Mendorong terciptanya pengelolaan sumber daya alam dan lingkungan hidup dengan tetap menjaga kelestariannya.</li>
+      </ul>
+    </div>
+    
+    <div class="tujuan-card">
+      <h3>Tujuan</h3>
+      <ul>
+        <li>Meningkatkan derajat kesehatan masyarakat.</li>
+        <li>Mewujudkan masyarakat cerdas, kreatif, berbudaya, berkarakter, dan menguasai ilmu pengetahuan, teknologi, serta ketaqwaan.</li>
+        <li>Meningkatkan kegiatan usaha ekonomi daerah dengan memanfaatkan sumber daya lokal.</li>
+        <li>Mewujudkan pelaksanaan pemerintahan, pelayanan masyarakat, dan pembangunan yang efektif, efisien, dan akuntabel.</li>
+        <li>Menciptakan iklim yang kondusif bagi pelaksanaan pembangunan dan investasi.</li>
+        <li>Mewujudkan infrastruktur pembangunan yang berkualitas dan merata di seluruh wilayah.</li>
+        <li>Mewujudkan peran serta dan kemandirian masyarakat dalam pembangunan tanpa membedakan gender, dengan memperhatikan hak-hak anak.</li>
+        <li>Memanfaatkan sumber daya alam secara optimal dan melakukan pengelolaan lingkungan hidup yang berkelanjutan.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="struktur-pemerintahan" class="content-section">
+    <h2>Struktur Pemerintahan  Desa Sidomukti</h2>
+    <div class="map-container">
+      <img src="images/pemerintahan.jpg" alt="Pemerintah Desa Sidomukti">
+    </div>
+  </section>
+
+  <section id="lembaga-desa" class="content-section lembaga-wrapper">
+  <h2>Lembaga Desa</h2>
+
+  <!-- PKK -->
+  <div class="lembaga-item">
+    <img src="images/LembagaDesa/PKK.jpg" alt="PKK Desa Sidomukti">
+    <div class="lembaga-text">
+      <h3>PKK Desa Sidomukti</h3>
+      <p>
+        PKK adalah organisasi yang berperan dalam pemberdayaan keluarga,
+        peningkatan kesejahteraan rumah tangga, serta mendukung berbagai
+        program sosial seperti kesehatan, pendidikan, dan ekonomi kreatif.
+        PKK Desa Sidomukti aktif mengadakan pelatihan keterampilan, sosialisasi
+        kesehatan, dan kegiatan pemberdayaan perempuan untuk meningkatkan kualitas hidup warga.
+      </p>
+    </div>
+  </div>
+
+  <!-- Karang Taruna -->
+  <div class="lembaga-item">
+    <img src="images/LembagaDesa/karang-taruna.jpg" alt="Karang Taruna Desa Sidomukti">
+    <div class="lembaga-text">
+      <h3>Karang Taruna</h3>
+      <p>
+        Karang Taruna adalah organisasi kepemudaan yang berfokus pada pengembangan
+        kreativitas, olahraga, kegiatan sosial, dan peningkatan kemampuan generasi muda.
+        Karang Taruna Sidomukti aktif mengadakan event desa, kegiatan sosial,
+        lomba pemuda, serta mendukung program pengembangan UMKM.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <section id="umkm" class="content-section">
+    <h2>UMKM Desa Sidomukti</h2>
+    <div class="card-grid">
+      
+      <div class="card">
+        <img src="images/UMKM/tahu-bakso-mbakul.jpg" alt="Tahu Bakso Mbak UL">
+        <h3>Tahu Bakso Mbak UL</h3>
+        <p>Taku Bakso Mbak UL merupakan usaha rumahan yang berdiri sejak tahun 2015. Usaha ini berawal dari inisiatif pribadi pemilik yang memproduksi tahu bakso dengan cita rasa khas dan bahan-bahan pilihan. Hingga kini, Taku Bakso Mbak UL terus berkembang dan menjadi salah satu produk kuliner lokal yang digemari masyarakat sekitar.</p>
+      </div>
+      
+      <div class="card">
+        <img src="images/UMKM/kerajinan-tas.jpg" alt="Tas Anyaman Iqiz Craft">
+        <h3>Tas Anyaman "Iqiz Craft"</h3>
+        <p>Iqiz Craft adalah usaha kerajinan tangan yang memproduksi berbagai jenis tas anyaman. Berdiri sejak tahun 2020, seluruh produk dibuat secara manual menggunakan teknik anyaman yang dipelajari secara otodidak. Pemasaran produk masih berfokus di wilayah sekitar Desa Sidomukti, namun kualitas dan keunikannya mulai menarik perhatian konsumen dari daerah lain.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/tape-singkong.jpg" alt="Tape Singkong">
+        <h3>Tape Singkong</h3>
+        <p>Usaha tape singkong ini telah berjalan selama kurang lebih sepuluh tahun. Meski sempat vakum selama dua tahun akibat pandemi COVID-19, kegiatan produksi kini telah kembali berjalan normal. Produk tape singkong ini dipasarkan dengan cara dititipkan ke pedagang sayur serta dijual langsung di pasar tradisional.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/tahu-bakso-h.jpg" alt="Tahu Bakso H">
+        <h3>Tahu Bakso H</h3>
+        <p>Tahu Bakso H merupakan salah satu usaha kuliner yang telah berproduksi sejak tahun 2013. Produk tahu bakso ini dikenal karena cita rasanya yang lezat dan teksturnya yang lembut. Untuk pemasarannya, produk ini dijual langsung ke pasar Bandungan dan menjadi salah satu kuliner unggulan lokal.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/aufa-snack.jpg" alt="Aufa Snack">
+        <h3>Aufa Snack</h3>
+        <p>Aufa Snack merupakan usaha kuliner yang berdiri sejak tahun 2022. Usaha ini memproduksi aneka camilan seperti brownies dan risoles dengan cita rasa khas rumahan. Meski tergolong baru, Aufa Snack terus berkembang dan berkomitmen menghadirkan produk berkualitas yang higienis dan terjangkau.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/bolu-cukil.png" alt="Bolu Cukil Jadul">
+        <h3>Bolu Cukil Jadul</h3>
+        <p>Bolu Cukil Jadul mulai beroperasi sejak tahun 2023 dengan fokus pada produksi kue bolu klasik yang mempertahankan cita rasa tradisional. Produk ini dibuat dengan bahan-bahan pilihan tanpa bahan pengawet, menjadikannya favorit masyarakat pencinta kue rumahan.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/kulit-lumpia.jpg" alt="Kulit Lumpia Angga">
+        <h3>Kulit Lumpia Angga</h3>
+        <p>Kulit Lumpia Angga berdiri sejak November 2024 dan memproduksi kulit lumpia segar yang digunakan untuk berbagai olahan makanan. Produk ini dikenal karena teksturnya yang lembut dan tidak mudah robek. Banyak digunakan oleh pelaku usaha kuliner lokal maupun dijual langsung ke masyarakat.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/keripik.jpg" alt="Agrohorti Sari Rasa">
+        <h3>Agrohorti Sari Rasa</h3>
+        <p>Agrohorti Sari Rasa merupakan usaha yang berdiri sejak tahun 2014 dan bergerak di berbagai bidang, antara lain pertanian, perikanan, dan kuliner. Usaha ini berkontribusi dalam meningkatkan perekonomian masyarakat desa serta memperluas lapangan pekerjaan di sekitar Sidomukti.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/gudang-indofood.jpg" alt="Gudang Indofood">
+        <h3>Gudang Indofood</h3>
+        <p>Gudang Indofood merupakan usaha pengepul sayur dan rempah-rempah yang telah bekerja sama dengan PT Indofood sejak tahun 1980-an. Kegiatan utama meliputi pengumpulan, penyortiran, dan pendistribusian hasil bumi ke industri, menjadikannya bagian penting dalam rantai pasok pertanian lokal.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/fano-hijab.jpg" alt="Fano Hijab">
+        <h3>Fano Hijab</h3>
+        <p>Fano Hijab berdiri sejak tahun 2018 dan berfokus pada produksi serta penjualan busana muslim, khususnya hijab dengan berbagai model dan bahan. Produk-produk Fano Hijab dirancang dengan memperhatikan tren mode dan kenyamanan pengguna, menjadikannya salah satu usaha fashion yang berkembang di Desa Sidomukti.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/batako.jpg" alt="Batako TB Makmur">
+        <h3>Batako (TB Makmur)</h3>
+        <p>Batako TB Makmur merupakan usaha yang bergerak di bidang produksi bahan bangunan, khususnya batako. Usaha ini dimiliki oleh pengusaha dari Bergas, sementara proses produksinya dilakukan di Desa Sidomukti sebelum produk didistribusikan ke berbagai wilayah.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/bistik.jpg" alt="Bistik">
+        <h3>Bistik</h3>
+        <p>Usaha bistik ini dikenal sebagai salah satu produk kuliner lokal dengan cita rasa lezat khas rumahan. Meski berskala kecil, produk bistik ini menjadi alternatif makanan siap saji yang digemari masyarakat sekitar.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/sempolan.jpg" alt="Sempol Maknyus">
+        <h3>Sempol Maknyus</h3>
+        <p>Sempol Maknyus merupakan usaha mikro yang beroperasi dari rumah dan memproduksi jajanan sempol dengan cita rasa gurih serta tekstur lembut. Produk ini banyak diminati oleh warga sekitar karena rasanya yang khas dan harganya yang terjangkau.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/omah-tahu.jpg" alt="Omah Tahu JJ">
+        <h3>Omah Tahu JJ</h3>
+        <p>Omah Tahu JJ adalah restoran unik yang seluruh menunya berbahan dasar tahu, mulai dari appetizer, hidangan utama, hingga minuman. Berlokasi di Jalan Goa Jepang, Bandungan, tempat ini menawarkan variasi olahan tahu dengan cita rasa khas dalam suasana yang tenang dan santai.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM//aurelia-collection.jpg" alt="Aurelia Collection">
+        <h3>Aurelia Collection</h3>
+        <p>Aurelia Collection berfokus pada penjualan berbagai produk sandang dan kebutuhan rumah tangga. Produk yang ditawarkan meliputi pakaian, kerudung, mainan anak, jas hujan, serta sepeda.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/pinkyy-fashion.jpg" alt="Pinkyy Fashion Collection">
+        <h3>Pinkyy Fashion Collection</h3>
+        <p>Pinkyy Fashion Collection melayani pembuatan berbagai jenis busana, mulai dari busana formal hingga kasual serta seragam. Semua bahan diperoleh dari berbagai sumber terpercaya untuk menjaga kualitas produk yang dihasilkan.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/adilia-farm.jpg" alt="Adilia Farm">
+        <h3>Adilia Farm</h3>
+        <p>Didirikan sejak tahun 2004, Adilia Farm berfokus pada usaha pemotongan ayam tanpa kegiatan peternakan. Menyediakan berbagai jenis unggas seperti ayam broiler, ayam kampung, ayam petelur, ayam merah, dan bebek.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/mbak-san.jpg" alt="Warung Mbak San">
+        <h3>Warung Mbak San</h3>
+        <p>Warung Mbak San berdiri sejak tahun 2020 dan menjual aneka makanan seperti lotek serta berbagai jenis camilan yang tersedia sesuai pesanan pelanggan.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/sansan.jpg" alt="Sansan Snack & Catering">
+        <h3>Sansan Snack & Catering</h3>
+        <p>Sejak tahun 2018, Sansan Snack & Catering melayani penjualan aneka snack, nasi tumpeng, dan hidangan lainnya. Promosi dilakukan melalui media WhatsApp untuk menjangkau pelanggan lebih luas.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/alip-usaha.jpeg" alt="Alip Usaha">
+        <h3>Alip Usaha</h3>
+        <p>Berdiri sejak tahun 2018, Alip Usaha telah berjalan selama tujuh tahun dengan sistem promosi sederhana dari mulut ke mulut melalui tetangga dan pelanggan setia.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/mie-ayam.jpg" alt="Mie Ayam Krandegan">
+        <h3>Mie Ayam Krandegan</h3>
+        <p>Mie Ayam Krandegan berdiri sejak tahun 2020 dan menjual mie ayam serta bakso homemade. Buka setiap hari pukul 10.00 hingga 19.00 WIB, dan tutup setiap hari Jumat.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/toko-sesa.jpg" alt="Toko Sesa">
+        <h3>Toko Sesa</h3>
+        <p>Toko Sesa merupakan swalayan yang berdiri sejak tahun 2023, menyediakan berbagai kebutuhan rumah tangga dan produk harian bagi masyarakat sekitar.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/berkah-jaya.jpg" alt="Berkah Jaya">
+        <h3>Berkah Jaya</h3>
+        <p>Sejak tahun 2018, Berkah Jaya aktif menjual berbagai produk melalui platform online seperti Shopee, TikTok, dan Facebook, guna menjangkau pasar yang lebih luas.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/UMKM/siang-malam.jpg" alt="Siang Malam">
+        <h3>Siang Malam</h3>
+        <p>Kedai ini menjual berbagai pilihan makanan ringan homemade. Setiap produk diolah secara langsung oleh pemilik dengan menjaga cita rasa rumahan yang autentik. 
+      </div>
+    </div>
+  </section>
+
+  <section id="pariwisata" class="content-section">
+    <h2>Pariwisata Desa Sidomukti</h2>
+    <div class="card-grid">
+      <a href="umbul-sidomukti.html" class="card link-card">
+        <img src="images/umbul-sidomukti.jpg" alt="Umbul Sidomukti">
+        <h3>Umbul Sidomukti</h3>
+        <p>Destinasi wisata alam dengan kolam renang alami dan panorama pegunungan yang memukau.</p>
+      </a>
+      <a href="sendang-prigen.html" class="card link-card">
+        <img src="images/sendang-prigen.jpg" alt="Sendang Prigen">
+        <h3>Sendang Prigen</h3>
+        <p>Situs patirtaan kuno bernilai sejarah yang menyatu dengan keindahan alam persawahan.</p>
+      </a>
+    </div>
+  </section>
+
+   <section id="administrasi-kependudukan" class="content-section administrasi-section">
+    <h2>Tugas dan Peran Administrasi Kependudukan Desa</h2>
+    <p class="administrasi-desc">
+      Administrasi Kependudukan bertanggung jawab dalam pengelolaan data penduduk, pelayanan dokumen, serta mendukung tertib administrasi untuk menciptakan pelayanan publik yang profesional dan akurat.
+    </p>
+
+    <div class="map-container">
+      <img src="images/pbi.jpg" alt="Peta Potensi Desa Sidomukti">
+    </div>
+
+    <div class="administrasi-list">
+      <div class="administrasi-item">
+        <h3>Fungsi Utama</h3>
+        <ul>
+          <li>Mengelola data kependudukan desa secara tertib dan terstruktur.</li>
+          <li>Menyimpan arsip dokumen kependudukan secara aman dan rapi.</li>
+          <li>Mendukung Kepala Desa dalam penyusunan laporan kependudukan.</li>
+        </ul>
+      </div>
+
+      <div class="administrasi-item">
+        <h3>Pelayanan Administratif</h3>
+        <ul>
+          <li>Melayani pembuatan surat keterangan domisili, pindah, kelahiran, kematian, dan lainnya.</li>
+          <li>Mengatur keperluan dokumen identitas dan data keluarga.</li>
+          <li>Memberikan pelayanan kependudukan yang cepat dan mudah dipahami masyarakat.</li>
+        </ul>
+      </div>
+
+      <div class="administrasi-item">
+        <h3>Pendataan dan Pelaporan</h3>
+        <ul>
+          <li>Menyusun laporan perkembangan jumlah penduduk secara berkala.</li>
+          <li>Memutakhirkan data kependudukan berdasarkan kondisi lapangan.</li>
+          <li>Mengkoordinasikan pendataan RT/RW agar sesuai standar administrasi.</li>
+        </ul>
+      </div>
+
+      <div class="administrasi-item">
+        <h3>Koordinasi dan Kolaborasi</h3>
+        <ul>
+          <li>Berkoordinasi dengan kecamatan terkait administrasi kependudukan.</li>
+          <li>Menyampaikan informasi kependudukan secara resmi kepada masyarakat.</li>
+          <li>Berkolaborasi dengan lembaga desa dalam kegiatan pendataan.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="administrasi-a" class="content-section administrasi-section">
+    <h2>Tugas dan Peran Administrasi A</h2>
+    <p class="administrasi-desc">
+      Administrasi A bertugas mengelola urusan administrasi tertentu demi mendukung pelayanan desa.
+    </p>
+
+    <div class="map-container">
+      <img src="images/pbi.jpg" alt="Ilustrasi Administrasi A">
+    </div>
+
+    <div class="administrasi-list">
+      <div class="administrasi-item">
+        <h3>Fungsi Utama</h3>
+        <ul>
+          <li>Melaksanakan tugas administratif sesuai bidang A.</li>
+          <li>Mengelola dokumen dan arsip secara rapi.</li>
+          <li>Mendukung penyusunan laporan kegiatan.</li>
+        </ul>
+      </div>
+
+      <div class="administrasi-item">
+        <h3>Pelayanan Administratif</h3>
+        <ul>
+          <li>Menyediakan layanan administrasi untuk masyarakat.</li>
+          <li>Memproses dokumen terkait bidang A.</li>
+          <li>Memberikan pelayanan cepat dan informatif.</li>
+        </ul>
+      </div>
+
+      <div class="administrasi-item">
+        <h3>Pendataan dan Pelaporan</h3>
+        <ul>
+          <li>Memperbarui data secara berkala.</li>
+          <li>Menyusun laporan perkembangan kegiatan.</li>
+          <li>Koordinasi dengan unit desa lain.</li>
+        </ul>
+      </div>
+
+      <div class="administrasi-item">
+        <h3>Koordinasi dan Kolaborasi</h3>
+        <ul>
+          <li>Koordinasi dengan lembaga desa.</li>
+          <li>Menyampaikan informasi kepada masyarakat.</li>
+          <li>Berkolaborasi dengan kecamatan.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="administrasi-b" class="content-section administrasi-section">
+    <h2>Tugas dan Peran Administrasi B</h2>
+    <p class="administrasi-desc">
+      Administrasi B berfokus pada pengelolaan tugas administratif bidang tertentu guna mendukung efektivitas tata kelola desa.
+    </p>
+
+    <div class="map-container">
+      <img src="images/pbi.jpg" alt="Ilustrasi Administrasi B">
+    </div>
+
+    <div class="administrasi-list">
+      <div class="administrasi-item">
+        <h3>Fungsi Utama</h3>
+        <ul>
+          <li>Mengatur dan mengolah data sesuai bidang Administrasi B.</li>
+          <li>Menyimpan arsip secara aman dan terstruktur.</li>
+          <li>Membantu Kepala Desa dalam penyusunan laporan bidang B.</li>
+        </ul>
+      </div>
+
+      <div class="administrasi-item">
+        <h3>Pelayanan Administratif</h3>
+        <ul>
+          <li>Melayani kebutuhan administrasi masyarakat terkait bidang B.</li>
+          <li>Mengatur dokumen dan surat menyurat yang diperlukan.</li>
+          <li>Memberikan pelayanan cepat, ramah, dan informatif.</li>
+        </ul>
+      </div>
+
+      <div class="administrasi-item">
+        <h3>Pendataan dan Pelaporan</h3>
+        <ul>
+          <li>Melakukan pendataan secara berkala sesuai kondisi lapangan.</li>
+          <li>Menyusun laporan perkembangan program bidang B.</li>
+          <li>Memastikan data sesuai dengan standar tata kelola desa.</li>
+        </ul>
+      </div>
+
+      <div class="administrasi-item">
+        <h3>Koordinasi dan Kolaborasi</h3>
+        <ul>
+          <li>Berkoordinasi dengan RT/RW dan perangkat desa lainnya.</li>
+          <li>Menyampaikan informasi administratif secara resmi.</li>
+          <li>Berkolaborasi dengan kecamatan dalam urusan pengelolaan administrasi.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="administrasi-c" class="content-section administrasi-section">
+    <h2>Tugas dan Peran Administrasi C</h2>
+    <p class="administrasi-desc">
+      Administrasi C memiliki tugas menjalankan fungsi administratif di bidang khusus guna mendukung kelancaran layanan desa secara keseluruhan.
+    </p>
+
+    <div class="map-container">
+      <img src="images/pbi.jpg" alt="Ilustrasi Administrasi C">
+    </div>
+
+    <div class="administrasi-list">
+      <div class="administrasi-item">
+        <h3>Fungsi Utama</h3>
+        <ul>
+          <li>Mengelola administrasi khusus bidang C.</li>
+          <li>Menyimpan dan merapikan dokumen penting.</li>
+          <li>Membantu penyusunan laporan administrasi.</li>
+        </ul>
+      </div>
+
+      <div class="administrasi-item">
+        <h3>Pelayanan Administratif</h3>
+        <ul>
+          <li>Melayani administrasi masyarakat untuk bidang C.</li>
+          <li>Memproses dokumen sesuai kebutuhan.</li>
+          <li>Memberikan pelayanan yang cepat dan mudah dipahami.</li>
+        </ul>
+      </div>
+
+      <div class="administrasi-item">
+        <h3>Pendataan dan Pelaporan</h3>
+        <ul>
+          <li>Melakukan pendataan lapangan secara berkala.</li>
+          <li>Menyusun laporan perkembangan bidang C.</li>
+          <li>Memastikan data sesuai standar administrasi desa.</li>
+        </ul>
+      </div>
+
+      <div class="administrasi-item">
+        <h3>Koordinasi dan Kolaborasi</h3>
+        <ul>
+          <li>Berkolaborasi dengan lembaga desa lain.</li>
+          <li>Menjalin koordinasi dengan kecamatan.</li>
+          <li>Menyampaikan informasi resmi kepada masyarakat.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="ppid-a" class="content-section ppid-section">
+    <h2>Tugas dan Peran PPID A</h2>
+
+    <p class="ppid-desc">
+      PPID A bertugas mengelola, menyediakan, dan memastikan keterbukaan informasi publik di lingkungan Pemerintah Desa Sidomukti secara profesional, transparan, dan tepat waktu.
+    </p>
+
+    <div class="map-container">
+      <img src="images/pbi.jpg" alt="Ilustrasi PPID A">
+    </div>
+
+    <div class="ppid-list">
+      <div class="ppid-item">
+        <h3>Fungsi Utama</h3>
+        <ul>
+          <li>Mengelola dan menyediakan informasi publik yang akurat.</li>
+          <li>Menjamin keterbukaan dan kemudahan akses informasi bagi masyarakat.</li>
+          <li>Menyusun daftar informasi publik yang wajib tersedia setiap saat.</li>
+        </ul>
+      </div>
+
+      <div class="ppid-item">
+        <h3>Pelayanan Informasi</h3>
+        <ul>
+          <li>Melayani permohonan informasi publik dari masyarakat.</li>
+          <li>Memberikan penjelasan terkait layanan informasi publik desa.</li>
+          <li>Memastikan pelayanan informasi dilakukan tepat waktu sesuai regulasi.</li>
+        </ul>
+      </div>
+
+      <div class="ppid-item">
+        <h3>Pendataan dan Dokumentasi</h3>
+        <ul>
+          <li>Mengarsipkan dokumen informasi publik secara rapi dan terstruktur.</li>
+          <li>Melakukan pembaruan data informasi publik secara berkala.</li>
+          <li>Menyusun laporan layanan informasi publik setiap periode.</li>
+        </ul>
+      </div>
+
+      <div class="ppid-item">
+        <h3>Koordinasi dan Kolaborasi</h3>
+        <ul>
+          <li>Berkoordinasi dengan Kepala Desa dan perangkat desa dalam pengelolaan informasi.</li>
+          <li>Berkomunikasi dengan kecamatan terkait regulasi keterbukaan informasi.</li>
+          <li>Berkolaborasi dengan lembaga desa untuk penyediaan data yang valid.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="ppid-b" class="content-section ppid-section">
+    <h2>Tugas dan Peran PPID B</h2>
+
+    <p class="ppid-desc">
+      PPID A bertugas mengelola, menyediakan, dan memastikan keterbukaan informasi publik di lingkungan Pemerintah Desa Sidomukti secara profesional, transparan, dan tepat waktu.
+    </p>
+
+    <div class="map-container">
+      <img src="images/pbi.jpg" alt="Ilustrasi PPID A">
+    </div>
+
+    <div class="ppid-list">
+      <div class="ppid-item">
+        <h3>Fungsi Utama</h3>
+        <ul>
+          <li>Mengelola dan menyediakan informasi publik yang akurat.</li>
+          <li>Menjamin keterbukaan dan kemudahan akses informasi bagi masyarakat.</li>
+          <li>Menyusun daftar informasi publik yang wajib tersedia setiap saat.</li>
+        </ul>
+      </div>
+
+      <div class="ppid-item">
+        <h3>Pelayanan Informasi</h3>
+        <ul>
+          <li>Melayani permohonan informasi publik dari masyarakat.</li>
+          <li>Memberikan penjelasan terkait layanan informasi publik desa.</li>
+          <li>Memastikan pelayanan informasi dilakukan tepat waktu sesuai regulasi.</li>
+        </ul>
+      </div>
+
+      <div class="ppid-item">
+        <h3>Pendataan dan Dokumentasi</h3>
+        <ul>
+          <li>Mengarsipkan dokumen informasi publik secara rapi dan terstruktur.</li>
+          <li>Melakukan pembaruan data informasi publik secara berkala.</li>
+          <li>Menyusun laporan layanan informasi publik setiap periode.</li>
+        </ul>
+      </div>
+
+      <div class="ppid-item">
+        <h3>Koordinasi dan Kolaborasi</h3>
+        <ul>
+          <li>Berkoordinasi dengan Kepala Desa dan perangkat desa dalam pengelolaan informasi.</li>
+          <li>Berkomunikasi dengan kecamatan terkait regulasi keterbukaan informasi.</li>
+          <li>Berkolaborasi dengan lembaga desa untuk penyediaan data yang valid.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="ppid-c" class="content-section ppid-section">
+    <h2>Tugas dan Peran PPID C</h2>
+
+    <p class="ppid-desc">
+      PPID C bertugas mengelola, menyediakan, dan memastikan keterbukaan informasi publik di lingkungan Pemerintah Desa Sidomukti secara profesional, transparan, dan tepat waktu.
+    </p>
+
+    <div class="map-container">
+      <img src="images/pbi.jpg" alt="Ilustrasi PPID A">
+    </div>
+
+    <div class="ppid-list">
+      <div class="ppid-item">
+        <h3>Fungsi Utama</h3>
+        <ul>
+          <li>Mengelola dan menyediakan informasi publik yang akurat.</li>
+          <li>Menjamin keterbukaan dan kemudahan akses informasi bagi masyarakat.</li>
+          <li>Menyusun daftar informasi publik yang wajib tersedia setiap saat.</li>
+        </ul>
+      </div>
+
+      <div class="ppid-item">
+        <h3>Pelayanan Informasi</h3>
+        <ul>
+          <li>Melayani permohonan informasi publik dari masyarakat.</li>
+          <li>Memberikan penjelasan terkait layanan informasi publik desa.</li>
+          <li>Memastikan pelayanan informasi dilakukan tepat waktu sesuai regulasi.</li>
+        </ul>
+      </div>
+
+      <div class="ppid-item">
+        <h3>Pendataan dan Dokumentasi</h3>
+        <ul>
+          <li>Mengarsipkan dokumen informasi publik secara rapi dan terstruktur.</li>
+          <li>Melakukan pembaruan data informasi publik secara berkala.</li>
+          <li>Menyusun laporan layanan informasi publik setiap periode.</li>
+        </ul>
+      </div>
+
+      <div class="ppid-item">
+        <h3>Koordinasi dan Kolaborasi</h3>
+        <ul>
+          <li>Berkoordinasi dengan Kepala Desa dan perangkat desa dalam pengelolaan informasi.</li>
+          <li>Berkomunikasi dengan kecamatan terkait regulasi keterbukaan informasi.</li>
+          <li>Berkolaborasi dengan lembaga desa untuk penyediaan data yang valid.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="ppid-d" class="content-section ppid-section">
+    <h2>Tugas dan Peran PPID D</h2>
+
+    <p class="ppid-desc">
+      PPID D bertugas mengelola, menyediakan, dan memastikan keterbukaan informasi publik di lingkungan Pemerintah Desa Sidomukti secara profesional, transparan, dan tepat waktu.
+    </p>
+
+    <div class="map-container">
+      <img src="images/pbi.jpg" alt="Ilustrasi PPID A">
+    </div>
+
+    <div class="ppid-list">
+      <div class="ppid-item">
+        <h3>Fungsi Utama</h3>
+        <ul>
+          <li>Mengelola dan menyediakan informasi publik yang akurat.</li>
+          <li>Menjamin keterbukaan dan kemudahan akses informasi bagi masyarakat.</li>
+          <li>Menyusun daftar informasi publik yang wajib tersedia setiap saat.</li>
+        </ul>
+      </div>
+
+      <div class="ppid-item">
+        <h3>Pelayanan Informasi</h3>
+        <ul>
+          <li>Melayani permohonan informasi publik dari masyarakat.</li>
+          <li>Memberikan penjelasan terkait layanan informasi publik desa.</li>
+          <li>Memastikan pelayanan informasi dilakukan tepat waktu sesuai regulasi.</li>
+        </ul>
+      </div>
+
+      <div class="ppid-item">
+        <h3>Pendataan dan Dokumentasi</h3>
+        <ul>
+          <li>Mengarsipkan dokumen informasi publik secara rapi dan terstruktur.</li>
+          <li>Melakukan pembaruan data informasi publik secara berkala.</li>
+          <li>Menyusun laporan layanan informasi publik setiap periode.</li>
+        </ul>
+      </div>
+
+      <div class="ppid-item">
+        <h3>Koordinasi dan Kolaborasi</h3>
+        <ul>
+          <li>Berkoordinasi dengan Kepala Desa dan perangkat desa dalam pengelolaan informasi.</li>
+          <li>Berkomunikasi dengan kecamatan terkait regulasi keterbukaan informasi.</li>
+          <li>Berkolaborasi dengan lembaga desa untuk penyediaan data yang valid.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="informasi-a" class="content-section info-section">
+    <div class="info-header">
+      <h2>Informasi A</h2>
+      <p>
+        Informasi A bertugas mengelola, menyediakan, dan memastikan keterbukaan informasi publik di lingkungan Pemerintah Desa Sidomukti secara profesional, transparan, dan tepat waktu.
+      </p>
+    </div>
+
+    <div class="map-container">
+      <img src="images/pbi.jpg" alt="Ilustrasi Info A">
+    </div>
+
+    <div class="info-content">
+
+      <div class="info-group">
+        <h3>Fungsi Utama</h3>
+        <ul>
+          <li>Mengelola dan menyediakan informasi publik yang akurat.</li>
+          <li>Menjamin keterbukaan dan kemudahan akses informasi bagi masyarakat.</li>
+          <li>Menyusun daftar informasi publik yang wajib tersedia setiap saat.</li>
+        </ul>
+      </div>
+
+      <div class="info-group">
+        <h3>Pelayanan Informasi</h3>
+        <ul>
+          <li>Melayani permohonan informasi publik dari masyarakat.</li>
+          <li>Memberikan penjelasan terkait layanan informasi publik desa.</li>
+          <li>Memastikan pelayanan informasi dilakukan tepat waktu sesuai regulasi.</li>
+        </ul>
+      </div>
+
+      <div class="info-group">
+        <h3>Pendataan dan Dokumentasi</h3>
+        <ul>
+          <li>Mengarsipkan dokumen informasi publik secara rapi dan terstruktur.</li>
+          <li>Melakukan pembaruan data informasi publik secara berkala.</li>
+          <li>Menyusun laporan layanan informasi publik setiap periode.</li>
+        </ul>
+      </div>
+
+      <div class="info-group">
+        <h3>Koordinasi dan Kolaborasi</h3>
+        <ul>
+          <li>Berkoordinasi dengan Kepala Desa dan perangkat desa dalam pengelolaan informasi.</li>
+          <li>Berkomunikasi dengan kecamatan terkait regulasi keterbukaan informasi.</li>
+          <li>Berkolaborasi dengan lembaga desa untuk penyediaan data yang valid.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="informasi-b" class="content-section info-section">
+    <div class="info-header">
+      <h2>Informasi B</h2>
+      <p>
+        Informasi B bertugas mengelola, menyediakan, dan memastikan keterbukaan informasi publik di lingkungan Pemerintah Desa Sidomukti secara profesional, transparan, dan tepat waktu.
+      </p>
+    </div>
+
+    <div class="map-container">
+      <img src="images/pbi.jpg" alt="Ilustrasi Info A">
+    </div>
+
+    <div class="info-content">
+      <div class="info-group">
+        <h3>Fungsi Utama</h3>
+        <ul>
+          <li>Mengelola dan menyediakan informasi publik yang akurat.</li>
+          <li>Menjamin keterbukaan dan kemudahan akses informasi bagi masyarakat.</li>
+          <li>Menyusun daftar informasi publik yang wajib tersedia setiap saat.</li>
+        </ul>
+      </div>
+
+      <div class="info-group">
+        <h3>Pelayanan Informasi</h3>
+        <ul>
+          <li>Melayani permohonan informasi publik dari masyarakat.</li>
+          <li>Memberikan penjelasan terkait layanan informasi publik desa.</li>
+          <li>Memastikan pelayanan informasi dilakukan tepat waktu sesuai regulasi.</li>
+        </ul>
+      </div>
+
+      <div class="info-group">
+        <h3>Pendataan dan Dokumentasi</h3>
+        <ul>
+          <li>Mengarsipkan dokumen informasi publik secara rapi dan terstruktur.</li>
+          <li>Melakukan pembaruan data informasi publik secara berkala.</li>
+          <li>Menyusun laporan layanan informasi publik setiap periode.</li>
+        </ul>
+      </div>
+
+      <div class="info-group">
+        <h3>Koordinasi dan Kolaborasi</h3>
+        <ul>
+          <li>Berkoordinasi dengan Kepala Desa dan perangkat desa dalam pengelolaan informasi.</li>
+          <li>Berkomunikasi dengan kecamatan terkait regulasi keterbukaan informasi.</li>
+          <li>Berkolaborasi dengan lembaga desa untuk penyediaan data yang valid.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="informasi-c" class="content-section info-section">
+    <div class="info-header">
+      <h2>Informasi C</h2>
+      <p>
+        Informasi C bertugas mengelola, menyediakan, dan memastikan keterbukaan informasi publik di lingkungan Pemerintah Desa Sidomukti secara profesional, transparan, dan tepat waktu.
+      </p>
+    </div>
+
+    <div class="map-container">
+      <img src="images/pbi.jpg" alt="Ilustrasi Info A">
+    </div>
+
+    <div class="info-content">
+      <div class="info-group">
+        <h3>Fungsi Utama</h3>
+        <ul>
+          <li>Mengelola dan menyediakan informasi publik yang akurat.</li>
+          <li>Menjamin keterbukaan dan kemudahan akses informasi bagi masyarakat.</li>
+          <li>Menyusun daftar informasi publik yang wajib tersedia setiap saat.</li>
+        </ul>
+      </div>
+
+      <div class="info-group">
+        <h3>Pelayanan Informasi</h3>
+        <ul>
+          <li>Melayani permohonan informasi publik dari masyarakat.</li>
+          <li>Memberikan penjelasan terkait layanan informasi publik desa.</li>
+          <li>Memastikan pelayanan informasi dilakukan tepat waktu sesuai regulasi.</li>
+        </ul>
+      </div>
+
+      <div class="info-group">
+        <h3>Pendataan dan Dokumentasi</h3>
+        <ul>
+          <li>Mengarsipkan dokumen informasi publik secara rapi dan terstruktur.</li>
+          <li>Melakukan pembaruan data informasi publik secara berkala.</li>
+          <li>Menyusun laporan layanan informasi publik setiap periode.</li>
+        </ul>
+      </div>
+
+      <div class="info-group">
+        <h3>Koordinasi dan Kolaborasi</h3>
+        <ul>
+          <li>Berkoordinasi dengan Kepala Desa dan perangkat desa dalam pengelolaan informasi.</li>
+          <li>Berkomunikasi dengan kecamatan terkait regulasi keterbukaan informasi.</li>
+          <li>Berkolaborasi dengan lembaga desa untuk penyediaan data yang valid.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="informasi-d" class="content-section info-section">
+    <div class="info-header">
+      <h2>Informasi D</h2>
+      <p>
+        Informasi D bertugas mengelola, menyediakan, dan memastikan keterbukaan informasi publik di lingkungan Pemerintah Desa Sidomukti secara profesional, transparan, dan tepat waktu.
+      </p>
+    </div>
+
+    <div class="map-container">
+      <img src="images/pbi.jpg" alt="Ilustrasi Info A">
+    </div>
+
+    <div class="info-content">
+      <div class="info-group">
+        <h3>Fungsi Utama</h3>
+        <ul>
+          <li>Mengelola dan menyediakan informasi publik yang akurat.</li>
+          <li>Menjamin keterbukaan dan kemudahan akses informasi bagi masyarakat.</li>
+          <li>Menyusun daftar informasi publik yang wajib tersedia setiap saat.</li>
+        </ul>
+      </div>
+
+      <div class="info-group">
+        <h3>Pelayanan Informasi</h3>
+        <ul>
+          <li>Melayani permohonan informasi publik dari masyarakat.</li>
+          <li>Memberikan penjelasan terkait layanan informasi publik desa.</li>
+          <li>Memastikan pelayanan informasi dilakukan tepat waktu sesuai regulasi.</li>
+        </ul>
+      </div>
+
+      <div class="info-group">
+        <h3>Pendataan dan Dokumentasi</h3>
+        <ul>
+          <li>Mengarsipkan dokumen informasi publik secara rapi dan terstruktur.</li>
+          <li>Melakukan pembaruan data informasi publik secara berkala.</li>
+          <li>Menyusun laporan layanan informasi publik setiap periode.</li>
+        </ul>
+      </div>
+
+      <div class="info-group">
+        <h3>Koordinasi dan Kolaborasi</h3>
+        <ul>
+          <li>Berkoordinasi dengan Kepala Desa dan perangkat desa dalam pengelolaan informasi.</li>
+          <li>Berkomunikasi dengan kecamatan terkait regulasi keterbukaan informasi.</li>
+          <li>Berkolaborasi dengan lembaga desa untuk penyediaan data yang valid.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+  
+  <section id="aboutus" class="content-section">
+    <div class="team-wrapper">
+      <h2>TIM UNNES GIAT 13 - DESA SIDOMUKTI</h2>
+
+    <div class="team-container">
+      <div class="team-card">
+        <img src="images/Team/Abimanyu Angger Pakusadewa.jpg" alt="Abimanyu Angger Pakusadewa">
+        <h4>Abimanyu Angger Pakusadewa</h4>
+        <p class="jurusan">Teknologi Pendidikan</p>
+      </div>
+
+      <div class="team-card">
+        <img src="images/Team/Anindya Salsabila.jpg" alt="Anindya Salsabila Putri">
+        <h4>Anindya Salsabila Putri</h4>
+        <p class="jurusan">Teknik Informatika</p>
+      </div>
+
+      <div class="team-card">
+        <img src="images/Team/Anin Bimarhamah.jpg" alt="Anin Bimarhamah">
+        <h4>Anin Bimarhamah</h4>
+        <p class="jurusan">Teknik Kimia</p>
+      </div>
+      <div class="team-card">
+        <img src="images/Team/Rechelle Yuninda.jpg" alt="Rechelle Yuninda">
+        <h4>Rechelle Yuninda</h4>
+        <p class="jurusan">Ilmu Hukum</p>
+      </div>
+      <div class="team-card">
+        <img src="images/Team/Maulana Noer Aziz.jpg" alt="Maulana Noer Aziz">
+        <h4>Maulana Noer Aziz</h4>
+        <p class="jurusan">Ilmu Hukum</p>
+      </div>
+      <div class="team-card">
+        <img src="images/Team/Dini Sofia Laeliyah.jpg" alt="Dini Sofia Laeliyah">
+        <h4>Dini Sofia Laeliyah</h4>
+        <p class="jurusan">Ilmu Hukum</p>
+      </div>
+      <div class="team-card">
+        <img src="images/Team/Faruq Amin Taher.jpg" alt="Faruq Amin Taher">
+        <h4>Faruq Amin Taher</h4>
+        <p class="jurusan">Pendidikan Akuntansi</p>
+      </div>
+      <div class="team-card">
+        <img src="images/Team/Mellyta Avriel Eka Aggiyani.jpg" alt="Mellyta Avriel Eka Aggiyani">
+        <h4>Mellyta Avriel Eka Aggiyani</h4>
+        <p class="jurusan">Pendidikan Jasmani, Kesehatan, dan Rekreasi</p>
+      </div>
+      <div class="team-card">
+        <img src="images/Team/Satria Febrian Nur Alamsyah.jpg" alt="Satria Febrian Nur Alamsyah ">
+        <h4>Satria Febrian Nur Alamsyah </h4>
+        <p class="jurusan">Pendidikan Ilmu Pengetahuan Sosial</p>
+      </div>
+      <div class="team-card">
+        <img src="images/Team/Ardira Sheva Felissa.jpg" alt="Ardira Sheva Felissa">
+        <h4>Ardira Sheva Felissa</h4>
+        <p class="jurusan">Pendidikan Bahasa Mandarin</p>
+      </div>
+      <div class="team-card">
+        <img src="images/Team/Najwa Laili Fathul Ulya.jpg" alt="Najwa Laili Fathul Ulya">
+        <h4>Najwa Laili Fathul Ulya</h4>
+        <p class="jurusan">Pendidikan Bahasa Inggris</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="program-wrapper">
+    <h3>Program Kerja</h3>
+    <div class="program-container">
+      <div class="program-card">
+      <h4>Desa Cerdas</h4>
+      <p>Kegiatan ini merupakan sosialisasi Penguatan UMKM Melalui Promosi, Data, Legalitas, Komunitas, dan Digitalisasi yang bekerja sama dengan Dinas Koperasi dan UMKM serta membangun komunitas UMKM oleh KKN</p>
+      <blockquote
+        class="instagram-media" 
+        data-instgrm-permalink="https://www.instagram.com/reel/DRMFGRLAbGY/?igsh=Mzh6bzF1cWsza24w"
+        data-instgrm-version="14">
+      </blockquote>
+      <script async src="//www.instagram.com/embed.js"></script>
+    </div> 
+
+      <div class="program-card">
+      <h4>BINTANG</h4>
+      <p>Kegiatan ini dilakukan bersama Dinas Arsip dan Perpustakaan Daerah yang menyediakan buku dan mendampingi kegiatan literasi. Mahasiswa KKN dan guru mengelola aktivitas membaca serta mengedukasi anak tentang pentingnya literasi. </p>
+      <blockquote 
+        class="instagram-media" 
+        data-instgrm-permalink="https://www.instagram.com/reel/DQZLWoEAaxw/?igsh=bHVmc3ZjcGgydnN3"
+        data-instgrm-version="14">
+      </blockquote>
+      <script async src="//www.instagram.com/embed.js"></script>
+  </div>
+
+  <div class="program-card">
+      <h4>Sosialisasi POC & Alat Penebar Pupuk</h4>
+      <p>Program ini pemanfaatan limbah air cucian beras dan menghadirkan teknologi tepat guna untuk membantu petani menebarkan pupuk </p> 
+      <blockquote 
+        class="instagram-media" 
+        data-instgrm-permalink="https://www.instagram.com/reel/DQnq7YdgVSt/?igsh=MWt1Mzc5ZndpNXFjaA=="
+        data-instgrm-version="14">
+      </blockquote>
+      <script async src="//www.instagram.com/embed.js"></script>
+    </div> 
+    
+  <div class="program-card">
+      <h4>Pelatihan Pembuatan Makanan Bergizi </h4>
+      <p>Program ini meningkatkan kesadaran gizi anak melalui pelatihan pembuatan nugget sayur sebagai camilan sehat agar keluarga terbiasa menerapkan pola makan bergizi sejak dini.</p>    
+      <blockquote 
+        class="instagram-media" 
+        data-instgrm-permalink="https://www.instagram.com/reel/DQd43FeAYt_/?igsh=MWl6aWUzeHRhanQzZg=="
+        data-instgrm-version="14">
+      </blockquote>
+      <script async src="//www.instagram.com/embed.js"></script>
+    </div> 
+
+    <div class="program-card">
+      <h4>Edukasi Bahasa Inggris Melalui Tour Guide  </h4>
+      <p>Program ini menumbuhkan minat dan kemampuan dasar berbahasa Inggris sekaligus mengenalkan destinasi wisata lokal, sehingga anak-anak lebih percaya diri dan bangga terhadap potensi desa.</p>    
+      <blockquote
+        class="instagram-media" 
+        data-instgrm-permalink="https://www.instagram.com/reel/DP0fq-Tgefk/?igsh=Z3hjMjB5ZmpjdWEw"
+        data-instgrm-version="14">
+      </blockquote>
+      <script async src="//www.instagram.com/embed.js"></script>
+    </div> 
+
+    <div class="program-card">
+      <h4>Festival Olahraga Tradisional </h4>
+      <p>Program ini meningkatkan kebugaran dan motorik anak sekaligus melestarikan budaya lokal untuk mendukung generasi yang sehat, aktif, dan berkarakter.</p>
+      <blockquote
+        class="instagram-media" 
+        data-instgrm-permalink="https://www.instagram.com/reel/DP8N-J3gXdN/?igsh=c3RlNm16OTZuYnFo"
+        data-instgrm-version="14">
+      </blockquote>
+      <script async src="//www.instagram.com/embed.js"></script>
+    </div> 
+
+    <div class="program-card">
+      <h4>Edukasi Menabung</h4>
+      <p>Kegiatan ini menanamkan kebiasaan menabung sejak dini untuk membentuk karakter mandiri, disiplin, dan bertanggung jawab dalam mengelola keuangan.</p>
+      <blockquote
+        class="instagram-media" 
+        data-instgrm-permalink="https://www.instagram.com/reel/DQbYePkgajt/?igsh=MW9qNzJjcW8yZmE0ag=="
+        data-instgrm-version="14">
+      </blockquote>
+      <script async src="//www.instagram.com/embed.js"></script>
+    </div> 
+    </div>
+    </div>
+
+    <section class="dokumentasi">
+      <h2>Dokumentasi Kegiatan Desa</h2>
+      <div class="slider">
+        <div class="slide-track">
+
+          <div class="slide">
+            <img src="images/Dokumentasi/penerjunan.jpg" alt="Penerjunan">
+            <div class="caption">Penerjunan UNNES GIAT 13</div>
+          </div> 
+          <div class="slide">
+            <img src="images/Dokumentasi/penerimaan.jpg" alt="Penerimaan">
+            <div class="caption">Penerimaan Kabupaten Semarang UNNES GIAT 13</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/Desa-cerdas.jpg" alt="Desa-cerdas">
+            <div class="caption">Desa Cerdas: Sosialisasi Prnguatan UMKM melalui Promosi, Data, Legalitas, Komunitas dan Digitalisasi </div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/bintang.jpg" alt="Bintang">
+            <div class="caption">Proker BINTANG</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/bakti-desa.jpg" alt="bakti-desa">
+            <div class="caption">Bakti Desa</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/POC.jpg" alt="Sosialiasi">
+            <div class="caption">Sosialisasi POC dan Alat Penebar Pupuk</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/menabung.jpg" alt="Menabung">
+            <div class="caption">Edukasi Menabung</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/Literasi.jpg" alt="Literasi">
+            <div class="caption">Literasi</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/Festival.jpg" alt="Festival Olahraga">
+            <div class="caption">Festival Olahraga</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/img9.jpg" alt="Posyandu">
+            <div class="caption">Posyandu Sidomukti</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/pelatihan-pkk.jpg" alt="Pembuatan Makanan Bergizi">
+            <div class="caption">Pelatihan Pembuatan Makanan Bergizi</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/tour-guide.jpg" alt="Tour Guide">
+            <div class="caption">Tour Guide</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/video-potensi.jpg" alt="Video Profile">
+            <div class="caption">Pembuatan Video Pofile Desa</div>
+          </div>
+
+          <!-- duplikasi untuk efek looping -->
+          <div class="slide">
+            <img src="images/Dokumentasi/penerjunan.jpg" alt="Penerjunan">
+            <div class="caption">Penerjunan UNNES GIAT 13</div>
+          </div> 
+          <div class="slide">
+            <img src="images/Dokumentasi/penerimaan.jpg" alt="penerimaan">
+            <div class="caption">Penerimaan Kabupaten Semarang UNNES GIAT 13</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/Desa-cerdas.jpg" alt="Desa-cerdas">
+            <div class="caption">Desa Cerdas: Sosialisasi Prnguatan UMKM melalui Promosi, Data, Legalitas, Komunitas dan Digitalisasi </div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/bintang.jpg" alt="Bintang">
+            <div class="caption">Proker BINTANG</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/bakti-desa.jpg" alt="bakti-desa">
+            <div class="caption">Bakti Desa</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/POC.jpg" alt="Sosialiasi">
+            <div class="caption">Sosialisasi POC dan Alat Penebar Pupuk</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/menabung.jpg" alt="Menabung">
+            <div class="caption">Edukasi Menabung</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/Literasi.jpg" alt="Literasi">
+            <div class="caption">Literasi</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/Festival.jpg" alt="Festival Olahraga">
+            <div class="caption">Festival Olahraga</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/posyandu.jpg" alt="Posyandu">
+            <div class="caption">Posyandu Sidomukti</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/pelatihan-pkk.jpg" alt="Pembuatan Makanan Bergizi">
+            <div class="caption">Pelatihan Pembuatan Makanan Bergizi</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/tour-guide.jpg" alt="Tour Guide">
+            <div class="caption">Tour Guide</div>
+          </div>
+          <div class="slide">
+            <img src="images/Dokumentasi/video-potensi.jpg" alt="Video Profile">
+            <div class="caption">Pembuatan Video Pofile Desa</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+<footer>
+    <div class="footer-top">
+      <div class="footer-map">
+        <h3>Lokasi Desa</h3>
+        <iframe src="https://www.google.com/maps?q=(-7.206484,110.380312)&hl=id&z=14&output=embed" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="footer-info">
+        <h3>Kontak & Alamat</h3>
+        <p><strong>Alamat:</strong> Jl. Goa Jepang Km. 1, 50665, Desa Sidomukti, Kecamatan Bandungan, Kabupaten Semarang, Jawa Tengah</p>
+        <p><strong>Email:</strong> <a href="mailto:desa.sidomuktibandungan@gmail.com"> desa.sidomuktibandungan@gmail.com</a></p>
+        <p><strong>Telepon:</strong> 0298-7136292</p>
+        <p><strong>Jam Operasional:</strong> Senin - Jumat, 08.30 - 14.00 WIB</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>Desa Sidomukti</span> | Dibuat oleh Anindya Salsabila | KKN UNNES GIAT 13</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
