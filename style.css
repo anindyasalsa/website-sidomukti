@@ -1247,3 +1247,16 @@ footer {
 .lembaga-item:hover .lembaga-text p {
   color: #ffffff;
 }  
+
+.video-container {
+  width: 100%;
+  max-width: 850px;
+  margin: 20px auto;
+}
+
+.video-container iframe {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  display: block;
+}
